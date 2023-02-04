@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cat(name) {
+            this.name = name
+        }
+        cat.prototype.xw = function(){console.log("喵喵叫");}
+        let mimi = new cat("咪咪");
+
+        console.log(mimi.name);
+        mimi.xw();
+    </script>
+</body>
+</html>
